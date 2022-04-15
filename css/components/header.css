@@ -1,0 +1,55 @@
+
+
+.header-container {
+    margin: 0 auto; 
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px var(--color5) solid;
+}
+
+.header-container .img-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.header-container .img-container img {
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-btn {
+font-size: 1.25rem;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+cursor: pointer;
+border-radius: 8rem;
+    border: 2px var(--color1) solid;
+}
+
+.unchosen-btn {
+    background-color: var(--color7);
+    border: rgba(255, 255, 255, 0.26) solid 1px;
+    transition: .5s;
+}
+
+.unchosen-btn:hover {
+    background-color: var(--color6);
+    border: var(--color5) solid 1px;
+}
+
+.meme-btn {
+    margin-right: 6px;
+}
+
+

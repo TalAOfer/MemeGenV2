@@ -1,0 +1,180 @@
+.generator-container {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 500px;
+}
+
+.canvas-container {
+    background-color: var(--color2);
+    flex:1;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 10px;
+}
+
+.form-container {
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to left, darkblue, darkorchid) 1;
+}
+
+.controller-container {
+    background-color: var(--color2);
+    flex:1;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to left, darkblue, darkorchid) 1;
+    height: 28.125rem;
+    width: 28.125rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.text-input {
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    background-color: var(--color9);
+}
+
+.canvas-container canvas:hover {
+    cursor: grab;
+}
+
+.control-btn {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    background-color: var(--color9);
+    font-size: 1.5rem;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-buttons-container {
+    padding: 1.25rem;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    display: flex;
+    gap: 0.625rem;
+    background-color: var(--color2);
+}
+
+.secondary-buttons-container {
+    padding: 1.25rem;
+    border: var(--color5) 1px solid;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.625rem;
+    background-color: var(--color2);
+    justify-items: center;
+}
+
+.secondary-buttons-container .font-type-btn {
+    background-color: var(--color9);
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    grid-column: 1/4;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--color5);
+    width: 89%;
+}
+
+.control-btn img {
+    height: 150%;
+}
+
+.control-btn.color-btn img {
+    height: 100%;
+}
+
+.control-btn.download-btn img {
+    height: 2.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn.upload-btn img {
+    height: 2.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-buttons-container {
+    padding: 1.25rem;
+    border: var(--color5) 1px solid;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    display: flex;
+    gap: 10px;
+    background-color: var(--color2);
+    align-items: center;
+}
+
+.clear-btn {
+    font-size: 1.2rem;
+    border-style: solid;
+    height: 2.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color5);
+}
+
+.load-button {
+    border-image: linear-gradient(to right, rgb(147, 147, 151), rgb(205, 198, 209)) 1;
+    cursor: default;
+    background-color: rgb(184, 182, 182);
+    border-width: 2px;
+}
+
+.load-button img {
+    cursor: default;
+}
+
+.load-button a {
+    cursor: default;
+}
+
+.load-button.active img {
+    cursor: pointer;
+}
+
+.load-button.active a {
+    cursor: pointer;
+}
+
+.load-button.active {
+    background-color: var(--color9);
+    cursor: pointer;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-width: 3px;
+}
